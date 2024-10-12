@@ -1,0 +1,58 @@
+{% extends "base.html" %}
+
+{% block title %}
+Login
+{% endblock %}
+
+
+
+{% block content %}
+
+<br>
+<br>
+<br>
+<br>  <br>  
+
+
+<section data-bs-version="5.1" class="form5 cid-uoYYTcRKRF" id="contact-form-3-uoYYTcRKRF">
+
+
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 content-head">
+                <div class="mbr-section-head mb-5">
+                    <h3 class="mbr-section-title mbr-fonts-style align-center mb-0 display-2">
+                        <strong>Log In</strong>
+                    </h3>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-lg-8 mx-auto mbr-form" data-form-type="formoid">
+                <form method="POST" class="mbr-form form-with-styler" data-form-title="Form Name"><input type="hidden" name="email" data-form-email="true" value="zKRh9PhGtUn8i22gn0d+tOlB9cN7h4gp9duYuTO1otX3KmEAmz5JThVvWMALdOixVWKcQ5YkbM8uJlyEoH1h57SjAD8S29mHIEPkHaX2B/c+PwtRRHQYWj0BEcLPfkP8">
+                    {% csrf_token %} 
+                    <div class="dragArea row">
+                       
+                        <div class="col-12 form-group mb-3 mb-3" data-for="email">
+                            <input type="text" name="username" placeholder="Username" data-form-field="username" class="form-control" value="" id="username">
+                        </div>
+                        
+                        <div class="col-12 form-group mb-3" data-for="textarea">
+                            <input name="password" placeholder="Password" data-form-field="textarea" class="form-control" id="password"></input>
+                        </div>
+                        <div class="col-lg-12 col-md-12 col-sm-12 align-center mbr-section-btn">
+                            <button type="submit" class="btn btn-primary display-7">Submit</button>
+                        </div>
+                    </div>
+
+    
+                </form>
+            </div>
+        </div>
+    </div>
+    <br>
+<br><br><br><br>
+</section>
+
+{% endblock %}

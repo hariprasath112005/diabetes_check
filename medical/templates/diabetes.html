@@ -1,0 +1,138 @@
+{% extends "base.html" %}
+
+{% block title %}
+Check For Diabetes
+{% endblock %}
+
+{% block content %}
+
+<br> <br><br>
+<br>
+<section data-bs-version="5.1" class="list1 cid-uqTBBbz1tp" id="faq-1-uqTBBbz1tp">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-12 col-lg-10 m-auto">
+                <div class="content">
+                    <div class="row justify-content-center mb-5">
+                        <div class="col-12 content-head">
+                            <div class="mbr-section-head">
+                                <h4 class="mbr-section-title mbr-fonts-style align-center mb-0 display-2">
+                                    <strong>How to Check Your Sugar Level</strong>
+                                </h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="bootstrap-accordion_5" class="panel-group accordionStyles accordion" role="tablist" aria-multiselectable="true">
+                        <div class="card">
+                            <div class="card-header" role="tab" id="headingOne">
+                                <a role="button" class="panel-title collapsed" data-toggle="collapse" data-bs-toggle="collapse" href="#collapse1_5" aria-expanded="false" aria-controls="collapse1">
+                                    <h6 class="panel-title-edit mbr-semibold mbr-fonts-style mb-0 display-5">Using a Glucometer</h6>
+                                    <span class="sign mbr-iconfont mobi-mbri-arrow-down"></span>
+                                </a>
+                            </div>
+                            <div id="collapse1_5" class="panel-collapse noScroll collapse" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion" data-bs-parent="#bootstrap-accordion_5">
+                                <div class="panel-body">
+                                    <p class="mbr-fonts-style panel-text display-7">Wash your hands: Clean hands are important to get an accurate reading.</p>
+                                    <p class="mbr-fonts-style panel-text display-7">Insert a test strip into the glucometer.</p>
+                                    <p class="mbr-fonts-style panel-text display-7">Prick your finger with a lancet to draw a small drop of blood.</p>
+                                    <p class="mbr-fonts-style panel-text display-7">Place the blood on the test strip, and wait for the reading.</p>
+                                    <p class="mbr-fonts-style panel-text display-7">Read the results on the glucometer screen. This will tell you your current blood glucose level.
+                                    </p>
+                                   
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="card">
+                            <div class="card-header" role="tab" id="headingTwo">
+                                <a role="button" class="panel-title collapsed" data-toggle="collapse" data-bs-toggle="collapse" href="#collapse2_5" aria-expanded="false" aria-controls="collapse2">
+                                    <h6 class="panel-title-edit mbr-semibold mbr-fonts-style mb-0 display-5"> Continuous Glucose Monitor (CGM)
+                                    </h6>
+                                    <span class="sign mbr-iconfont mobi-mbri-arrow-down"></span>
+                                </a>
+                            </div>
+                            <div id="collapse2_5" class="panel-collapse noScroll collapse" role="tabpanel" aria-labelledby="headingTwo" data-parent="#accordion" data-bs-parent="#bootstrap-accordion_5">
+                                <div class="panel-body">
+                                    <p class="mbr-fonts-style panel-text display-7">A CGM device includes a small sensor placed under the skin, typically on the arm or abdomen.</p>
+                                    <p class="mbr-fonts-style panel-text display-7">The sensor measures glucose levels in interstitial fluid every few minutes.</p>
+                                    <p class="mbr-fonts-style panel-text display-7">View real-time results on a compatible device, like a smartphone or the CGM reader.</p>
+                                    <p class="mbr-fonts-style panel-text display-7">Some CGM devices have an app that sends alerts when your levels are too high or low.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" role="tab" id="headingThree">
+                                <a role="button" class="panel-title collapsed" data-toggle="collapse" data-bs-toggle="collapse" href="#collapse3_5" aria-expanded="false" aria-controls="collapse3">
+                                    <h6 class="panel-title-edit mbr-semibold mbr-fonts-style mb-0 display-5"> HbA1c Test (Lab Test)</h6>
+                                    <span class="sign mbr-iconfont mobi-mbri-arrow-down"></span>
+                                </a>
+                            </div>
+                            <div id="collapse3_5" class="panel-collapse noScroll collapse" role="tabpanel" aria-labelledby="headingThree" data-parent="#accordion" data-bs-parent="#bootstrap-accordion_5">
+                                <div class="panel-body">
+                                    
+                                    
+                                    <p class="mbr-fonts-style panel-text display-7">This test is done at a clinic or lab and measures your average blood glucose levels over the past 2-3 months.</p>
+                                    <p class="mbr-fonts-style panel-text display-7">It provides an indication of long-term blood sugar control.</p>
+                                    <p class="mbr-fonts-style panel-text display-7">Your doctor can order this test, or you can get it done at some pharmacies and testing centers.</p>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section data-bs-version="5.1" class="form5 cid-uqTBBbA2t7" id="contact-form-2-uqTBBbA2t7">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 content-head">
+                <div class="mbr-section-head mb-5">
+                    <h3 class="mbr-section-title mbr-fonts-style align-center mb-0 display-2">
+                        <strong>Check For Diabetes</strong>
+                    </h3>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-lg-8 mx-auto mbr-form" data-form-type="formoid">
+              <form action="" method="POST" class="mbr-form form-with-styler" data-form-title="Form Name">
+                       
+                <div class="dragArea row">
+                  {% csrf_token %}
+                  <div class="col-12 form-group mb-3 mb-3" data-for="url">
+                    <input type="number" name="age" placeholder="Age" data-form-field="age" class="form-control" value="" id="name-contact-form-3-uoYYTcRKRF">
+                    
+                </div>
+                    <div class="col-md col-sm-12 form-group mb-3" data-for="name">
+                        <input type="number" name="sugar_level_before" placeholder="Sugar Level While Fasting" data-form-field="sugar_level_before" class="form-control" value="" id="url-contact-form-3-uoYYTcRKRF">
+                    </div>
+                    <div class="col-md col-sm-12 form-group mb-3" data-for="email">
+                        <input type="number" name="sugar_level_after" placeholder="Sugar Level 2 Hours after Eating" data-form-field="sugar_level_before" class="form-control" value="" id="email-contact-form-3-uoYYTcRKRF">
+                    </div>
+                   
+                    
+                    <div class="col-lg-12 col-md-12 col-sm-12 align-center mbr-section-btn">
+                        <button type="submit" class="btn btn-primary display-7">Send It!</button>
+                    </div>
+                    {% if messages %}
+                    <div class="alert alert-danger">
+                        {% for message in messages %}
+                            {{ message }}
+                        {% endfor %}
+                    </div>
+                {% endif %}
+                </div>
+            </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+{% endblock %}
